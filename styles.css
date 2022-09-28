@@ -1,11 +1,32 @@
 /* here we go */ 
 /* img! not image or image1/2/3 */
+body {
+    background-color: whitesmoke;
+}
 
 img {
    margin: 0%;
    width: 100%;
+   display: block;
 }
 
 header {
     text-align: center;
+}
+
+header >div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 1em;
+    align-items: right;
 }
