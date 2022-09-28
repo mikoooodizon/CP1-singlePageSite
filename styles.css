@@ -30,3 +30,10 @@ header ul li {
     margin-right: 1em;
     align-items: right;
 }
+
+/* did a lot here with h2 and it turned out useless, bruh */
+h2 {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
