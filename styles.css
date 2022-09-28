@@ -37,3 +37,9 @@ h2 {
     text-align: center;
     width: 100%;
 }
+
+footer {
+    text-align: center;
+    font-size: small;
+    background-color: whitesmoke;
+}
