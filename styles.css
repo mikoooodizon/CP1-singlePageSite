@@ -9,6 +9,7 @@ nav {
     background-color: whitesmoke;
     color: black;
     font-family: 'Courier New', Courier, monospace;
+    flex-direction:column;
 }
 
 body {
@@ -56,8 +57,14 @@ footer {
     background-color: whitesmoke;
 }
 
+/* should I just use the "order" function" */
+
 #studiologos {
         width: 100%;
+        display: grid;
+        grid-template-columns: 20fr 20fr; /* something's wrong here */
+        flex-direction: column;
+        justify-content: center;
 }
 
 *
@@ -72,9 +79,13 @@ body {
     overflow-x: hidden;
 }
 
+.studiologos {
+    display: flex;
+}
 
+/*
 .brandsGrid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,1fr);
     row-gap: 50px;
     margin-left: 30em;
