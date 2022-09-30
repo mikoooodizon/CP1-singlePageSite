@@ -76,11 +76,27 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2fr 2fr;
+    margin: 4fr; 
+    column-gap: 10%;  
 }
+
+.brands {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0;
+    padding: 3%;
+    image-rendering: crisp-edges;
+    column-gap: 15px;
+    border-image: auto;
+}
+/* sections are periods */
 
 
 
 /* SPECIFIC OR IDS SELECTORS - id is only one time*/
+
+
+
 
 #part2 {
     background-color: whitesmoke;
@@ -89,9 +105,9 @@ iframe {
 }
 
 #studiologos {
-    width: 100%;     
-        width: 100%;
-    width: 100%;     
+    width: 100%;       
+    margin: 4fr; 
+    column-gap: 10%;  
 }
 
 
@@ -103,6 +119,17 @@ font-size:30px;
 #map p {
     text-align: center;
     font-size: large;
+}
+
+#ceoS {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: max-content;
+    margin: 4fr;
+    padding: 5%;
+    image-rendering: crisp-edges;
+    column-gap: 10px;
+    border-image: auto;
 
 }
 /* did a lot here with h2 and it turned out useless, bruh */
