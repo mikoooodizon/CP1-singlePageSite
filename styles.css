@@ -1,28 +1,25 @@
 /* here we go */ 
 /* img! not image or image1/2/3 */
 
-nav {
-    position: sticky;
-    top: 0%;
-}
-.whitePad {
-    background-color: whitesmoke;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    flex-direction:column;
-}
-
 body {
     background-color: whitesmoke;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
-   margin: 0%;
-   width: 100%;
-   display: block;
-}
+    margin: 0%;
+    width: 100%;
+    display: block;
+ }
 
-header {
+ header {
     text-align: center;
     background-image:cross-fade();
 }
@@ -43,9 +40,8 @@ header ul li {
     margin-right: 1em;
     align-items: right;
 }
-
-/* did a lot here with h2 and it turned out useless, bruh */
-h2 {
+    /* organizing it makes it easier to edit later */
+ h2 {
     display: flex;
     text-align: center;
     width: 100%;
@@ -57,15 +53,52 @@ footer {
     background-color: whitesmoke;
 }
 
-/* should I just use the "order" function" */
+nav {
+    position: sticky;
+    top: 0%;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* MORE SPECIFIC CLASSES SELECTORS -specific */
+.whitePad {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction:column;
+}
+
+.brandsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* SPECIFIC OR IDS SELECTORS - id is only one time*/
+
 
 #studiologos {
+    width: 100%;     
         width: 100%;
-        display: grid;
-        grid-template-columns: 20fr 20fr; /* something's wrong here */
-        flex-direction: column;
-        justify-content: center;
+    width: 100%;     
 }
+
+
+#map h1 {
+text-align: center; 
+font-size:30px;
+}
+
+
+/* did a lot here with h2 and it turned out useless, bruh */
+
+
+/* should I just use the "order" function" */
+#map h1 {
+    text-align: center;
+}
+
 
 *
 {
@@ -75,46 +108,10 @@ footer {
 }
 
 body {
-    min height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
 .studiologos {
     display: flex;
 }
-
-/*
-.brandsGrid {
-    display: flex;
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 50px;
-    margin-left: 30em;
-    margin-right: 30em;
-    gap: 2em;
-    grid-template-columns:repeat(4, 20 em);
-    grid-template-rows: 2;
-}
-
-.gridSpan2 {
-
-}
-
-/* .main { THIS WAS A FAIL
-    position:absolute;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,300));
-    column-gap: 15px;
-    row-gap: 15;
-}
-{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
-
-*/

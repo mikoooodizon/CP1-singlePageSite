@@ -2,11 +2,11 @@
  
 <!-- GEt 20 images, map, 5 team members(big5) -->
 <html lang="en"> <!--- what image here?-->
-              <title> Art House Media </title>
-             <link rel="stylesheet" href="styles.css">
+              
             
 <head> 
-    <title>Art House Media</title>
+    <title> Art House Media </title>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
         <div class="top-bar">
             <h1> Art House Media </h1>
 <div>
-    
+    <!-- closing tags never hold any class or function-->
     <nav class="whitePad">
         <ul>
             <li>Studios</li>
@@ -34,9 +34,10 @@
     </nav>
     
   <!-- Nav bar, HEDER GOES HERE w what background IMAGE? -->
-</div class="topbar">
+</div>
+
 <img src="/pics - general/hollywood.jpg" class="image1" alt="">
-        <h1 style=font-size:45px> Modern Cinema and Media </h1>
+        <h1 style=font-size:45px> Modern Media and Cinema </h1>
         <h3> Cinema And The Economics Behind It</h3>
     </header>    
 
@@ -48,83 +49,101 @@
   <!-- how do I add more space here? -->
 <!-- Use divs to divide PARTS of Your Site-->
 
-  <div id="map">
- <h1 style="text-align: center; font-size:30px"> MAPPING THE BIG 5 STUDIOS</h1>
+  <section id="map">
+ <h1 > MAPPING THE BIG 5 STUDIOS</h1>
     <!-- MAP AND CONTACTS GO HERE-->
-        <img src="/pics - general/big5map.png" alt="">
-    <p> All neighbors. The biggest competitors to each other live side by side. <strong> The Silicon Valley of Entertainment</strong>. </p>
-  </div>
+       <!-- easier than expected to do - iframe, a rendered map not this image<img src="/pics - general/big5map.png" alt=""> --> 
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13207.40694819635!2d-118.3465732658458!3d34.15013508926874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bfc91b7bf323%3A0x16d1cd7dc89a5826!2sWarner%20Bros.%20Studios%2C%20Burbank%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1664536130757!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+       <p> All neighbors. The biggest competitors to each other live side by side. <strong> The Silicon Valley of Entertainment</strong>. </p>
+  </section>
                             <hr>
-<div id="studiologos">
+
+
+<section id="studiologos">
     <section style="text-align:center; font-size: 35px"> Iconic Studious - Gallery </section>
 
     <!-- Responsive Gallery, Responsive to Width...-->
     <div class="brandsGrid">
         <div>
-    <img src="/pics - general/disney-logo-castle.jpeg" alt="">
-            </div>
-        <div>
-    <img src="pics - general/WBlogo.png" alt="">
+            <h2>Brand</h2>
+            <img src="./pics-general/disney-logo-castle.jpeg" alt=""/>
+            <p>Some description</p>
         </div>
         <div>
-    <img src="/pics - general/SonyPictures.png" alt="">
-</div>
-    <div>
-    <img src="/pics - general/comcast-vector-logo.png" alt="">
-</div>
-<div>
-    <img src="/pics - general/Paramount-Plus-Logo.png" alt="">
-</div>
-<div>
-    <img src="/pics - general/bigfive.jpg" alt="">
-</div>   MOVE THE IMAGES UP!
+            <h2>Brand</h2>
+            <img src="./pics-general/WBlogo.png" alt=""/>
+            <p>Some description</p>
+        </div>
+        <div>
+            <h2>Brand</h2>
+            <img src="./pics-general/SonyPictures.png" alt=""/>
+            <p>Some description</p>
+        </div>
+        <div>
+            <h2>Brand</h2>
+            <img src="./pics-general/comcast-vector-logo.png" alt=""/>
+            <p>Some description</p>
+        </div>
+        <div>
+            <h2>Brand</h2>
+            <img src="./pics-general/Paramount-Plus-Logo.png" alt=""/>
+            <p>Some description</p>
+        </div>
+        <div>
+            <h2>Brand</h2>
+            <img src="./pics-general/bigfive.jpg" alt=""/>
+            <p>Some description</p>
+        </div>  
     </div>
 
-    <h1></h1>
+    </section>
 
-</div>
+<!-- aqui estamos-->
                     <hr>
         <div>
             <section></section>
 <!-- brands/studios FLAGSHIP BRANDS, 5 exampples = IN CARDS!-->
         <h1 style="text-align: center"> Iconic Brands </h1>
-            <div><div><div><div><div></div></div></div></div><li>Marvel</li> <!-- iconic endgame poster-->
+
+<section>
+        <ul>
+            <li>Marvel</li> <!-- iconic endgame poster-->
             <li>House of Dragon</li> <!-- u know the pic-->
-        </div> 
-        <div>
+      
             <li> Spiderman </li> <!-- No Way Home Poster-->
-        </div>
-        <div>
+    
             <li> Minions</li>
-        </div>
-        <div>
+  
             <li> Top Gun Maverick</li> 
-        </div>
-        <div>
+      
             <li> DC</li> <!-- Peacemaker pic-->
-        </div>
-        
-        </div> 
+        </ul>
+     
+    </section> <!-- section = belong together. USE TO REPLACE DIV-->      
+    
+
 
                         <hr>
-<div>
+
     <section></section>
     <!-- team sections, CEOs and Companies, for simplicity main ip muna-->
     <h1 style="text-align: center;"> Leading Men </h1>
     <!-- <p> Bob Chapek David Zaslav Tony Vinciquerra Peter Cramer Gary Davey</p>
  edit-->
-</div>
+ </section>
 
 </main>
 
-</body>
+
                         <hr>
 <footer class="footer">
     <address> Copyright 2022 - Created at BCS</address>
     <address> c/Muntaner, 08021, Barcelona - SPAIN</address>
     <address> +34 455 08 73 12</address>
-    <address> Opens with creativity and curiousity</address>
-
+    <address> Opens whenever creativity and curiousity is alight</address>
+<!-- make these ad Ps!-->
 </footer>
+
+</body>
 
 </html>
