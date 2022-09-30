@@ -16,7 +16,8 @@ body {
 img {
     margin: 0%;
     width: 100%;
-    display: block;
+    height: 25em;
+    display: flex;
  }
 
  header {
@@ -62,6 +63,7 @@ iframe {
     width: 100%;
 }
 
+
 /* MORE SPECIFIC CLASSES SELECTORS -specific */
 .whitePad {
     background-color: whitesmoke;
@@ -73,10 +75,18 @@ iframe {
 .brandsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 2fr 2fr;
 }
+
+
 
 /* SPECIFIC OR IDS SELECTORS - id is only one time*/
 
+#part2 {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
 
 #studiologos {
     width: 100%;     
@@ -90,7 +100,11 @@ text-align: center;
 font-size:30px;
 }
 
+#map p {
+    text-align: center;
+    font-size: large;
 
+}
 /* did a lot here with h2 and it turned out useless, bruh */
 
 
