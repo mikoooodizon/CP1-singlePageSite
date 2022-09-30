@@ -81,14 +81,38 @@ iframe {
 }
 
 .brands {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+.brands ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 10fr;
+    padding-right: 10fr;
+    
+  }
+.brands img {
+    margin: 5px;
+    align-items: center;
+
+  }
+    /*
     margin: 0;
     padding: 3%;
+    justify-items: center;
     image-rendering: crisp-edges;
     column-gap: 15px;
-    border-image: auto;
-}
+    border-image: auto; */
+                    /* a copy 
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(3, 200px);
+                    gap:1em;
+                    align-items: end;
+                    justify-items:center; */
+
 /* sections are periods */
 
 
